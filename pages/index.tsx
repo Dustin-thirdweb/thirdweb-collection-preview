@@ -65,12 +65,19 @@ export default function Buy() {
       >
         <option value="ethereum">Ethereum</option>
         <option value="polygon">Polygon</option>
+        <option value="base">Base</option>
+        <option value="pulsechain">Pulsechain</option>
+        <option value="cronos">Cronos</option>
+        <option value="binance">Binance Smartchain</option>
+        <option value="alveychain">Alveychain</option>
+        <option value="base-goerli">Base Goerli</option>
+        <option value="phoenix">Phoenix</option>
+        <option value="dogechain">Dogechain</option>
         <option value="mumbai">Mumbai</option>
         <option value="goerli">Goerli</option>
         <option value="arbitrum">Arbitrum One</option>
         <option value="arbitrum-goerli">Arbitrum Goerli</option>
         <option value="optimisim">Optimism</option>
-        <option value="binance">Binance SmartChain</option>
         <option value="binance-testnet">Binance SmartChain Testnt</option>
         <option value="fantom">Fantom Opera</option>
         <option value="fantom-testnet">Fantom Testnet</option>

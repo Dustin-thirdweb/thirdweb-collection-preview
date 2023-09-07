@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { useState } from "react";
 import ChainContext from "../context/Chain";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import { Dogechain, Ethereum, Polygon, Mumbai, Goerli, Base } from "@thirdweb-dev/chains"
+import { supportedChains } from "../context/SupportedChains"
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [selectedChain, setSelectedChain] = useState("ethereum");
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChainContext.Provider value={{ selectedChain, setSelectedChain }}>
       <ThirdwebProvider 
         activeChain={selectedChain}
-        supportedChains={[Dogechain, Ethereum, Polygon, Mumbai, Goerli, Base]}
+        supportedChains={supportedChains}
         clientId={process.env.NEXT_PUBLIC_THIRDWEB_CLIENTID}
       >
         <Component {...pageProps} />
