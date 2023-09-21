@@ -64,6 +64,7 @@ export default function Buy() {
         }}
       >
         <option value="ethereum">Ethereum</option>
+        <option value="zksync-era-testnet">ZksyncEraTestnet</option>
         <option value="polygon">Polygon</option>
         <option value="base">Base</option>
         <option value="pulsechain">Pulsechain</option>
